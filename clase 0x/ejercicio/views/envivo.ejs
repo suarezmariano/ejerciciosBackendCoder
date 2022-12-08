@@ -1,0 +1,44 @@
+<header>
+  <%- include('./partials/encabezado.ejs') %>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</header>
+<body>
+  
+    </div>
+    <div >
+        <div class="jumbotron"  style='float:left; margin-right: 5px;'>
+          <h1 style="color: blue">Partido En vivo </h1>
+          <br />
+    
+          <h1>Honduras vs Argentina</h1>
+        <div>
+          <img src="img/argentina.png" style='float:left; width:150px; height: 100px; margin-right: 10px;'>
+          <div id='resultado'style='float:left;margin-right: 10px;'> <h1>1-0</h1>  </div>
+          <img src="img/honduras.png" style='float:left; width: 150px; height: 100px;'>
+        </div>
+        <div id="eventos" ></div>>
+        <%- include('./partials/eventosTabla.ejs') %>
+        </form>
+          <br>
+          
+        </div>
+  <div  style='float:left'>
+    <div class="jumbotron" style='float:left'>
+      <h1 style="color: blue">Ingrese datos</h1>
+      <br />
+
+      <h1>Cliente Websockets</h1>
+      <div id="mensajes"></div>
+      <form onsubmit="return addMessage(this)">
+        <input type="text" id="username" placeholder="Tu Nombre" />
+        <input type="text" id="texto" placeholder="Cuéntanos algo..." />
+        <input type="submit" value="Enviar" />
+      </form>
+
+      <h2 style="color: crimson">Historial</h2>
+    </div>
+  </div>
+</div>
+</body>
+<%- include('./partials/pie.ejs') %>

@@ -1,0 +1,20 @@
+<% if(hPartidos.length !==0 ) { %>
+<div class="table-responsive">
+  <table class="table table-dark">
+    <tr style="color: yellow">
+      <th>Zona</th>
+      <th>Fecha</th>
+      <th>Resultado</th>
+    </tr>
+    <% for (const indice in hPartidos) { %>
+    <tr>
+      <td><%= hPartidos[indice].zona %></td>
+      <td><%= hPartidos[indice].fecha %></td>
+      <td><%= hPartidos[indice].resultado %></td>
+    </tr>
+    <% } %>
+  </table>
+</div>
+<% } else { %>
+<h3 style="color: black">no existen datos</h3>
+<% } %>

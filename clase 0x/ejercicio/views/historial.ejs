@@ -1,0 +1,14 @@
+<header><%- include('./partials/encabezado.ejs') %></header>
+<body>
+  <a href="envivo">En vivo</a>
+  <div class="container mt-3">
+    <div class="jumbotron">
+      <br />
+
+      <%=hPartidos.zona%>
+      <h2 style="color: crimson">Historial</h2>
+      <%- include('./partials/tabla.ejs',hPartidos) %>
+    </div>
+  </div>
+</body>
+<%- include('./partials/pie.ejs') %>
