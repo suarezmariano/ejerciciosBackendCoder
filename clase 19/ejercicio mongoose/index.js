@@ -101,8 +101,8 @@ await mongoose.connect('mongodb://127.0.0.1/coderhouse', {
 
 console.log('Base de datos conectada');
 
-// for (const estudiante of estudiantes) {
-//     await EstudantesDAO.create(estudiante)
-// }
+for (const estudiante of estudiantes) {
+  await EstudantesDAO.create(estudiante);
+}
 
-// await EstudantesDAO.insertMany(estudiantes) //bulk
+// await EstudantesDAO.insertMany(estudiantes) // no crea nada si hay un error
