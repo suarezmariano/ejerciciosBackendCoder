@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.5",
+    "express-session": "^1.17.2",
+    "nodemon": "^2.0.16",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "type": "commonjs",
+  "name": "desafio2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
